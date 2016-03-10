@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import numpy as np
 
-img=mpimg.imread('Lenna.tiff')
+img=mpimg.imread('chelsea.png')
 [r,g,b] = [img[:,:,i] for i in range(3)]
 
 

@@ -1,8 +1,8 @@
 UECM3033 Assignment #2 Report
 ========================================================
 
-- Prepared by: ** Put your name here**
-- Tutorial Group: T2/T3
+- Prepared by: ** Tham Kien Yang**
+- Tutorial Group: T3
 
 --------------------------------------------------------
 
@@ -10,7 +10,7 @@ UECM3033 Assignment #2 Report
 
 The reports, codes and supporting documents are to be uploaded to Github at: 
 
-[https://github.com/your_github_id/UECM3033_assign1](https://github.com/your_github_id/UECM3033_assign1)
+[https://github.com/ThamKienYang/UECM3033_assign2](https://github.com/ThamKienYang/UECM3033_assign2)
 
 Explain your selection criteria here.
 
@@ -20,9 +20,9 @@ Explain how you implement your `task1.py` here.
 
 ## Task 2 -- SVD method and image compression
 
-Put here your picture file (Lenna.png)
+Put here your picture file (chelsea.png)
 
-![Lenna.png](Lenna.png)
+![chelsea.png](chelsea.png)
 
 How many non zero element in $\Sigma$?
 
@@ -34,4 +34,4 @@ What is a sparse matrix?
 
 -----------------------------------
 
-<sup>last modified: change your date here</sup>
+<sup>last modified: 10/3/2016</sup>
