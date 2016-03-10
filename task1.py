@@ -1,16 +1,17 @@
 import numpy as np
-ITERATION_LIMIT = 10
 #You can import some modules or create additional functions
 
 def LUdecomp(A):
-       n=len(A)
-       for j in range(0, n-1):
+    sol = []
+    n=len(A)
+    for j in range(0, n-1):
         for i in range(j+1, n):
             if A[i,j]!= 0.0:
                 lam = A[i,j] / A[j,j]
                 A[i, j+1:n] = A[i, j+1:n] - lam * A[j, j+1:n]
                 A[i, j] = lam
         return A
+    return list(sol)
 
 def lu(A, b):
     sol = []
@@ -26,6 +27,7 @@ def lu(A, b):
 def sor(A, b):
     sol = []
     x = np.zeros_like(b)
+    ITERATION_LIMIT = 10
     omega = 1.03
     for itr in range(ITERATION_LIMIT):
         for i in range(len(b)):
@@ -34,7 +36,7 @@ def sor(A, b):
     return list(sol)
 
 def solve(A, b):
-    condition = TRUE # State and implement your condition here
+    condition = np.count_nonzero(A) > 1/2 *len(A)
     if condition:
         print('Solve by lu(A,b)')
         return lu(A,b)
